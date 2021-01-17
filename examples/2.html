@@ -1,0 +1,331 @@
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音符飘动</title>
+    <style>
+        @keyframes p1_notes1AniKey {
+            0% {
+                transform: translateZ(0) rotate(-6deg) scale(.2);
+                opacity: 0
+            }
+
+            0.58% {
+                transform: translate3D(.01px, -.26px, 0) rotate(-5.96deg) scale(.20090653);
+                opacity: .01
+            }
+
+            1.16% {
+                transform: translate3D(.055px, -.276vw, 0) rotate(-5.85deg) scale(.20353584);
+                opacity: .04
+            }
+
+            1.73% {
+                transform: translate3D(.15px, -.60533vw, 0) rotate(-5.66deg) scale(.2077644);
+                opacity: .09
+            }
+
+            2.31% {
+                transform: translate3D(.31px, -1.05067vw, 0) rotate(-5.42deg) scale(.2134825);
+                opacity: .15
+            }
+
+            2.89% {
+                transform: translate3D(.565px, -1.60133vw, 0) rotate(-5.11deg) scale(.22059216);
+                opacity: .22
+            }
+
+            3.47% {
+                transform: translate3D(.925px, -2.252vw, 0) rotate(-4.74deg) scale(.2290054);
+                opacity: .3
+            }
+
+            4.05% {
+                transform: translate3D(.37467vw, -2.99333vw, 0) rotate(-4.33deg) scale(.23864289);
+                opacity: .38
+            }
+
+            4.62% {
+                transform: translate3D(.53867vw, -3.82133vw, 0) rotate(-3.86deg) scale(.24943274);
+                opacity: .47
+            }
+
+            5.20% {
+                transform: translate3D(.73733vw, -4.728vw, 0) rotate(-3.35deg) scale(.26130955);
+                opacity: .57
+            }
+
+            5.78% {
+                transform: translate3D(.97333vw, -5.708vw, 0) rotate(-2.79deg) scale(.27421359);
+                opacity: .67
+            }
+
+            6.36% {
+                transform: translate3D(1.24667vw, -6.75733vw, 0) rotate(-2.19deg) scale(.28809014);
+                opacity: .77
+            }
+
+            6.94% {
+                transform: translate3D(1.556vw, -7.87067vw, 0) rotate(-1.55deg) scale(.30288884);
+                opacity: .87
+            }
+
+            7.51% {
+                transform: translate3D(1.90133vw, -9.04667vw, 0) rotate(-.87deg) scale(.31856324);
+                opacity: .96
+            }
+
+            8.09% {
+                transform: translate3D(2.284vw, -10.27867vw, 0) rotate(-.15deg) scale(.33507036);
+                opacity: 1
+            }
+
+            8.67% {
+                transform: translate3D(2.7vw, -11.564vw, 0) rotate(.6deg) scale(.35237028);
+                opacity: 1
+            }
+
+            9.25% {
+                transform: translate3D(3.15067vw, -12.90133vw, 0) rotate(1.38deg) scale(.37042585);
+                opacity: 1
+            }
+
+            9.83% {
+                transform: translate3D(3.63467vw, -14.28667vw, 0) rotate(2.19deg) scale(.38920238);
+                opacity: 1
+            }
+
+            10.40% {
+                transform: translate3D(4.152vw, -15.71733vw, 0) rotate(3.03deg) scale(.4086674);
+                opacity: 1
+            }
+
+            10.98% {
+                transform: translate3D(4.7vw, -17.19067vw, 0) rotate(3.9deg) scale(.4287904);
+                opacity: 1
+            }
+
+            11.56% {
+                transform: translate3D(5.28vw, -18.70533vw, 0) rotate(4.8deg) scale(.44954271);
+                opacity: 1
+            }
+
+            12.14% {
+                transform: translate3D(5.89067vw, -20.25733vw, 0) rotate(5.73deg) scale(.47089724);
+                opacity: 1
+            }
+
+            12.72% {
+                transform: translate3D(6.53067vw, -21.84667vw, 0) rotate(6.67deg) scale(.49282836);
+                opacity: 1
+            }
+
+            13.29% {
+                transform: translate3D(7.2vw, -23.47067vw, 0) rotate(7.65deg) scale(.51531176);
+                opacity: 1
+            }
+
+            13.87% {
+                transform: translate3D(7.89867vw, -25.12933vw, 0) rotate(8.64deg) scale(.53832429);
+                opacity: 1
+            }
+
+            14.45% {
+                transform: translate3D(8.62533vw, -26.81733vw, 0) rotate(9.66deg) scale(.56184387);
+                opacity: 1
+            }
+
+            15.03% {
+                transform: translate3D(9.37867vw, -28.53467vw, 0) rotate(10.7deg) scale(.58584936);
+                opacity: 1
+            }
+
+            15.61% {
+                transform: translate3D(10.15867vw, -30.28vw, 0) rotate(11.76deg) scale(.61032047);
+                opacity: 1
+            }
+
+            16.18% {
+                transform: translate3D(10.96533vw, -32.052vw, 0) rotate(12.84deg) scale(.63523763);
+                opacity: 1
+            }
+
+            16.76% {
+                transform: translate3D(11.79867vw, -33.848vw, 0) rotate(13.94deg) scale(.66058197);
+                opacity: 1
+            }
+
+            17.34% {
+                transform: translate3D(12.65867vw, -35.668vw, 0) rotate(15.05deg) scale(.68633513);
+                opacity: 1
+            }
+
+            17.92% {
+                transform: translate3D(13.54267vw, -37.50933vw, 0) rotate(16.18deg) scale(.71247926);
+                opacity: 1
+            }
+
+            18.50% {
+                transform: translate3D(14.45333vw, -39.37067vw, 0) rotate(17.33deg) scale(.73899689);
+                opacity: 1
+            }
+
+            19.08% {
+                transform: translate3D(15.388vw, -41.25067vw, 0) rotate(18.49deg) scale(.76587087);
+                opacity: 1
+            }
+
+            19.65% {
+                transform: translate3D(16.348vw, -43.148vw, 0) rotate(19.67deg) scale(.79308424);
+                opacity: 1
+            }
+
+            20.23% {
+                transform: translate3D(17.332vw, -45.06133vw, 0) rotate(20.86deg) scale(.82062021);
+                opacity: 1
+            }
+
+            20.81% {
+                transform: translate3D(18.34133vw, -46.988vw, 0) rotate(22.07deg) scale(.84846198);
+                opacity: 1
+            }
+
+            21.39% {
+                transform: translate3D(19.37467vw, -48.928vw, 0) rotate(23.29deg) scale(.87659272);
+                opacity: 1
+            }
+
+            21.97% {
+                transform: translate3D(20.43333vw, -50.87867vw, 0) rotate(24.51deg) scale(.9049954);
+                opacity: 1
+            }
+
+            22.54% {
+                transform: translate3D(21.516vw, -52.84vw, 0) rotate(25.76deg) scale(.9336527);
+                opacity: 1
+            }
+
+            23.12% {
+                transform: translate3D(22.62267vw, -54.80667vw, 0) rotate(27.01deg) scale(.96254683);
+                opacity: 1
+            }
+
+            23.70% {
+                transform: translate3D(23.75333vw, -56.78vw, 0) rotate(28.27deg) scale(.99165945);
+                opacity: 1
+            }
+
+            24.28% {
+                transform: translate3D(24.91067vw, -58.75733vw, 0) rotate(29.53deg) scale(1.0209714);
+                opacity: 1
+            }
+
+            24.86% {
+                transform: translate3D(26.09067vw, -60.736vw, 0) rotate(30.81deg) scale(1.05046252);
+                opacity: 1
+            }
+
+            25.43% {
+                transform: translate3D(27.29733vw, -62.71333vw, 0) rotate(32.09deg) scale(1.08011138);
+                opacity: 1
+            }
+
+            26.01% {
+                transform: translate3D(28.52933vw, -64.688vw, 0) rotate(33.38deg) scale(1.10989497);
+                opacity: 1
+            }
+
+            26.59% {
+                transform: translate3D(29.788vw, -66.656vw, 0) rotate(34.68deg) scale(1.1397883);
+                opacity: 1
+            }
+
+            27.17% {
+                transform: translate3D(31.072vw, -68.616vw, 0) rotate(35.97deg) scale(1.16976388);
+                opacity: 1
+            }
+
+            27.75% {
+                transform: translate3D(32.38267vw, -70.56133vw, 0) rotate(37.27deg) scale(1.19979113);
+                opacity: 1
+            }
+
+            28.32% {
+                transform: translate3D(33.72133vw, -72.48933vw, 0) rotate(38.57deg) scale(1.22983554);
+                opacity: 1
+            }
+
+            28.90% {
+                transform: translate3D(35.088vw, -74.39733vw, 0) rotate(39.87deg) scale(1.25985756);
+                opacity: 1
+            }
+
+            29.48% {
+                transform: translate3D(36.48267vw, -76.276vw, 0) rotate(41.17deg) scale(1.28981124);
+                opacity: 1
+            }
+
+            30.06% {
+                transform: translate3D(37.90667vw, -78.12133vw, 0) rotate(42.46deg) scale(1.31964215);
+                opacity: 1
+            }
+
+            30.64% {
+                transform: translate3D(39.36vw, -79.92533vw, 0) rotate(43.75deg) scale(1.3492846);
+                opacity: .94
+            }
+
+            31.21% {
+                transform: translate3D(40.84267vw, -81.676vw, 0) rotate(45.02deg) scale(1.37865762);
+                opacity: .81
+            }
+
+            31.79% {
+                transform: translate3D(42.35467vw, -83.36267vw, 0) rotate(46.27deg) scale(1.40765879);
+                opacity: .68
+            }
+
+            32.37% {
+                transform: translate3D(43.89333vw, -84.972vw, 0) rotate(47.51deg) scale(1.43615471);
+                opacity: .55
+            }
+
+            32.95% {
+                transform: translate3D(45.456vw, -86.48267vw, 0) rotate(48.71deg) scale(1.46396535);
+                opacity: .42
+            }
+
+            33.53% {
+                transform: translate3D(47.03333vw, -87.86933vw, 0) rotate(49.87deg) scale(1.49083649);
+                opacity: .3
+            }
+
+            34.10% {
+                transform: translate3D(48.60533vw, -89.1vw, 0) rotate(50.98deg) scale(1.51638751);
+                opacity: .17
+            }
+
+            34.68% {
+                transform: translate3D(50.13333vw, -90.13333vw, 0) rotate(52deg) scale(1.54);
+                opacity: .04
+            }
+
+            35.26% {
+                transform: translate3D(50.13333vw, -90.13333vw, 0) rotate(52deg) scale(1.54);
+                opacity: 0
+            }
+
+            to {
+                transform: translate3D(50.13333vw, -90.13333vw, 0) rotate(52deg) scale(1.54);
+                opacity: 0
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+
+</html>

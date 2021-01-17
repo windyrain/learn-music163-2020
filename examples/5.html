@@ -1,0 +1,60 @@
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文字被擦掉</title>
+    <style>
+        body {
+            background: linear-gradient(-180deg,#fee4cc,#f7ab91)
+        }
+
+        @keyframes textContentsAniKey {
+            0% {
+                filter: blur(0);
+                opacity: 1
+            }
+
+            50% {
+                opacity: .3
+            }
+
+            to {
+                filter: blur(.8vw);
+                opacity: .3
+            }
+        }
+
+        .wrapper {
+            position: absolute;
+            right: -62.06667vw;
+            top: 69.33333vw;
+            width: 37vh;
+            height: 46.1vh;
+            transform: translate(-48.8667vw, -19.6vw) scale(0.905797) rotate(-30deg) skew(24deg);
+            animation: textContentsAniKey 5s linear 1s 1 normal forwards
+        }
+
+        .title {
+            font-size: 32px;
+            color: #884035;
+            letter-spacing: .99px;
+            line-height: 70px;
+        }
+
+        .author, .name {
+            font-size: 21px;
+            color: #884035;
+            letter-spacing: .65px;
+            line-height: 25px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title">被遗忘的歌</div>
+        <div class="author">陈柯宇</div>
+        <div class="name">《生僻字》</div>
+    </div>
+</body>
+</html>

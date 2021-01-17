@@ -1,0 +1,161 @@
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音乐盒打开</title>
+    <style>
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        @keyframes capOpenSprAniKey {
+            0% {
+                background-position: 0 0
+            }
+
+            5% {
+                background-position: -390px 0
+            }
+
+            10% {
+                background-position: -780px 0
+            }
+
+            15% {
+                background-position: -1170px 0
+            }
+
+            20% {
+                background-position: -1560px 0
+            }
+
+            25% {
+                background-position: -1950px 0
+            }
+
+            30% {
+                background-position: -2340px 0
+            }
+
+            35% {
+                background-position: -2730px 0
+            }
+
+            40% {
+                background-position: -3120px 0
+            }
+
+            45% {
+                background-position: -3510px 0
+            }
+
+            50% {
+                background-position: 0 -364px
+            }
+
+            55% {
+                background-position: -390px -364px
+            }
+
+            60% {
+                background-position: -780px -364px
+            }
+
+            65% {
+                background-position: -1170px -364px
+            }
+
+            70% {
+                background-position: -1560px -364px
+            }
+
+            75% {
+                background-position: -1950px -364px
+            }
+
+            80% {
+                background-position: -2340px -364px
+            }
+
+            85% {
+                background-position: -2730px -364px
+            }
+
+            90% {
+                background-position: -3120px -364px
+            }
+
+            95% {
+                background-position: -3510px -364px
+            }
+
+            to {
+                background-position: 0 -728px
+            }
+        }
+
+        .m-page1 {
+            background-image: linear-gradient(-180deg, #f8d6ce, #ffbfaf);
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .container {
+            position: relative
+        }
+
+        .motion-container {
+            position: relative;
+            width: 100%;
+            text-align: center
+        }
+
+        .capHole {
+            position: absolute;
+            left: 35.62vw;
+            top: 47.53867vw;
+            width: 61.6vw;
+            height: 60.26667vw;
+            background-image: url(//s7.music.126.net/5fbe14ccc914bf80c73c7146/capHole_.706c00c97341053d80f458627bead176.png);
+            background-size: cover;
+        }
+
+        .capOpenSpriteWrapper {
+            position: absolute;
+            left: 36.99733vw;
+            top: 38.17333vw;
+            width: 52vw;
+            height: 48.53333vw;
+            transform-style: preserve-3d;
+            transform: translateZ(0) rotate(-1deg) scale(1.03);
+            opacity: 1;
+            transform-origin: 55.07% 50.12%;
+        }
+
+        .capOpenSprite {
+            background-image: url(//s7.music.126.net/5fbe14ccc914bf80c73c7146/sprite25.d1c4c3796d9d743a335a9fa9602b7101.png);
+            transform-origin: 0 0;
+            transform: scale(.5);
+            width: 104vw;
+            height: 97.06667vw;
+            animation: capOpenSprAniKey .7s steps(1) 2.66666667s 1 normal forwards
+        }
+    </style>
+</head>
+
+<body>
+    <div class="m-page1">
+        <div class="container">
+            <div class="motion-container">
+                <div class="capHole"></div>
+                <div class="capOpenSpriteWrapper">
+                    <div class="capOpenSprite"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
